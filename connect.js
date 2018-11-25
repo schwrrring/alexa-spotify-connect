@@ -12,7 +12,7 @@ var express_app = express();
 // Create a 1 hour cache for storing user devices
 var cache = new nodecache({ stdTTL: 3600, checkperiod: 120 });
 // Create instance of alexa-app
-var app = new alexa.app('connect');
+var app = new alexa.app('concert-finder');
 // Bind alexa-app to express instance
 app.express({ expressApp: express_app });
 
